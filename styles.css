@@ -1,0 +1,8 @@
+#app{
+    background-color: black;
+    min-height: 100vh;
+}
+
+#header{
+    font-family: 'Cinzel', serif;
+}
