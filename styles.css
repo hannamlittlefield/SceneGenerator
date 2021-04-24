@@ -1,6 +1,10 @@
-#app{
-    background-color: black;
-    min-height: 100vh;
+.app{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+    background-color: #56A3A6;
 }
 
 #header{
