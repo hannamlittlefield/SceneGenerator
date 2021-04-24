@@ -1,3 +1,5 @@
 function handleOnClick(){
-    alert("choices here");
+    var e = document.getElementById("location")
+    var location = e.options[e.selectedIndex].value; 
+    alert(location);
 }

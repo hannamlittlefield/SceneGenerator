@@ -11,12 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <title>Scene Generator</title>
-        <script src="app.js"></script>
     </head>
     <body>
         <div class="app">
             <h1 id="header">Beqanna Scene Generator</h1>
             <div id="dropdowns">
+            
                 <label for="location">Choose a location:</label>
                     <select id="location" name="location">
                         <option value="field">Field</option>
@@ -48,11 +48,12 @@
                         <option value="fall">Fall</option>    
                     </select>
                 <br/>
-            <button onclick="handleOnClick">Generate</button>
+            <button onclick="handleOnClick()">Generate</button>
             </div>  
 
 </select>
         </div>
+        <script src="app.js"></script>
         <script src="" async defer></script>
     </body>
 </html>
