@@ -7,6 +7,23 @@
     background-color: rgba(186, 161, 196, 0.9);
 }
 
+button{
+    background: rgba(186, 161, 196, 0.8);
+    border-top: 2px solid #3F3757;
+    border-bottom: 2px solid #3F3757;
+    padding: 3px 8px;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Mate SC', serif;
+    text-transform: lowercase;
+    font-size: 18px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+ }
+
 #header{
     font-family: 'Cinzel', serif;
 }
@@ -15,10 +32,20 @@
     font-size: 25px;
     margin: 0 auto;
     width: 400px;
-    height: 400px;
+    height: 100px;
 }
 
-#mooddisplay{
+#moodDisplay{
+    font-family: 'Mate SC', serif;
+    font-size: 30px;
+    margin: auto;
+    height: 35px;
+}
+
+#generatedContent{
+    width: 400px;
+    height: 100px;
     font-family: arial;
     margin: auto;
+    padding-top: 15px;
 }
