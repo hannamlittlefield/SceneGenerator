@@ -4,10 +4,44 @@ function handleOnClick(){
     document.getElementById("generatedContent").innerHTML = randomLocation;
 }
 
-/*const locationChoices = [
+const timeOfDay = [
+    "Sunrise",
+    "Early dawn",
+    "Sunset",
+    "Midday",
+    "Dusk",
+    "Dawn",
+    "Early morning",
+    "Midnight",
+    "Sometime in the morning when the birds start singing",
+    "Twilight (not the books)",
+    "Early evening",
+    "Light is just appearing on the horizon",
+    "Late morning",
+    "Sometime in the middle of the night",
+    "During the first rays of sunlight",
+    "Shadows are long",
+    "Night with a full moon",
+    "A pitch black night",
+    "Sometime around a meal time, you're hungry",
+    "Shortly after sunup",
+    "Shortly before sunset",
+    "You're not quite sure.. the weather makes it hard to tell",
+    "Mid-afternoon",
+    "Mid-morning",
+    "Late evening",
+    "Sometime right before moonrise"
+]
+const locationChoices = [
     field
     {"winter":[{
-        "weather":[snowstorm, dusting of snow, well below freezing, unseasonably warm]
+        "weather":["snowstorm", 
+            "dusting of snow", 
+            "well below freezing", 
+            "unseasonably warm",
+            "freezing rain",
+            "cold and clear",
+            "blizzard conditions"]
         "see":
         "hear":
     }]
@@ -31,7 +65,7 @@ function handleOnClick(){
 
 ]*/
 
-let moods = ["angry", 
+const moods = ["angry", 
 "anticipating", 
 "anxious", 
 "apathetic", 
@@ -68,4 +102,4 @@ function randomMood(){
 const decidedMood = randomMood(moods)
 
 //var randomMood = moods[Math.floor(Math.random()*moods.length)];
-document.getElementById("mooddisplay").innerHTML = decidedMood;
+document.getElementById("moodDisplay").innerHTML = decidedMood;
