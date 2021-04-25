@@ -1,8 +1,9 @@
 function handleOnClick(){
     var e = document.getElementById("location")
-    var location = e.options[e.selectedIndex].value; 
-    alert(location);
+    var randomLocation = e.options[e.selectedIndex].value; 
+    document.getElementById("generatedContent").innerHTML = randomLocation;
 }
+
 /*const locationChoices = [
     field
     {"winter":[{
