@@ -15,42 +15,43 @@
     <body>
         <div class="app">
             <h1 id="header">Beqanna Scene Generator</h1>
-            <form id="dropdowns">
-                <label>Choose a location:</label>
-                    <select id="location" name="location">
-                        <option value="field">Field</option>
-                        <option value="meadow">Meadow</option>
-                        <option value="forest">Forest</option>
-                        <option value="river">River</option>
-                        <option value="playground">Playground</option>
-                        <option value="den">Adoption Den</option>
-                        <option value="mountain">Mountain</option>
-                        <option value="icicleisle">Icicle Isle</option>
-                        <option value="nerine">Nerine</option>
-                        <option value="taiga">Taiga</option>
-                        <option value="loess">Loess</option>
-                        <option value="sylva">Sylva</option>
-                        <option value="brilliantpampas">Brilliant Pampas</option>
-                        <option value="hyaline">Hyaline</option>
-                        <option value="silvercove">Silver Cove</option>
-                        <option value="pangea">Pangea</option>
-                        <option value="tephra">Tephra</option>
-                        <option value="ischia">Ischia</option>
-                        <option value="islandres">Islandres</option>
-                    </select>
+            <div id="form">
+                <form id="dropdowns">
+                    <label>Choose a location:</label>
+                        <select id="location" name="location">
+                            <option value="field">Field</option>
+                            <option value="meadow">Meadow</option>
+                            <option value="forest">Forest</option>
+                            <option value="river">River</option>
+                            <option value="playground">Playground</option>
+                            <option value="den">Adoption Den</option>
+                            <option value="mountain">Mountain</option>
+                            <option value="icicleisle">Icicle Isle</option>
+                            <option value="nerine">Nerine</option>
+                            <option value="taiga">Taiga</option>
+                            <option value="loess">Loess</option>
+                            <option value="sylva">Sylva</option>
+                            <option value="brilliantpampas">Brilliant Pampas</option>
+                            <option value="hyaline">Hyaline</option>
+                            <option value="silvercove">Silver Cove</option>
+                            <option value="pangea">Pangea</option>
+                            <option value="tephra">Tephra</option>
+                            <option value="ischia">Ischia</option>
+                            <option value="islandres">Islandres</option>
+                        </select>
 
-                <label>Choose a season:</label>
-                    <select id="season" name="season">
-                        <option value="winter">Winter</option>
-                        <option value="spring">Spring</option>
-                        <option value="summer">Summer</option>
-                        <option value="fall">Fall</option>    
-                    </select>
-                <br/>
-            <button onclick="handleOnClick()">Generate</button>
-                </form>  
-
-</select>
+                    <label>Choose a season:</label>
+                        <select id="season" name="season">
+                            <option value="winter">Winter</option>
+                            <option value="spring">Spring</option>
+                            <option value="summer">Summer</option>
+                            <option value="fall">Fall</option>    
+                        </select>
+                    <br/>
+                <button onclick="handleOnClick()">Generate</button>
+                    </form></div>
+        <div id="mooddisplay"></div>
+        <button onClick="randomMood()">Generate Mood</button>
         </div>
         <script src="app.js"></script>
         <script src="" async defer></script>
