@@ -1,8 +1,11 @@
+body{
+    background-color: rgba(186, 161, 196, 0.9);
+    background-size: cover;
+}
 .app{
-    height: 100vh;
-    width: auto;
-    margin: auto;
+    align-content: center;
     text-align: center;
+    margin: auto;
     font-family: 'Cinzel', serif;
     background-color: rgba(186, 161, 196, 0.9);
 }
@@ -48,4 +51,13 @@ button{
     font-family: arial;
     margin: auto;
     padding-top: 15px;
+}
+
+#footer{
+    background-color: rgba(186, 161, 196, 0.9);
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
