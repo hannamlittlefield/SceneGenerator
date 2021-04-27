@@ -14,7 +14,7 @@ const timeOfDay = [
     "Late morning",
     "Sometime in the middle of the night",
     "During the first rays of sunlight",
-    "Shadows are long",
+    "The shadows are long",
     "Night with a full moon",
     "A pitch black night",
     "Sometime around a meal time, you're hungry",
@@ -26,6 +26,30 @@ const timeOfDay = [
     "Late evening",
     "Sometime right before moonrise"
 ]
+
+const tempWeather = ["snowstorm", 
+"dusting of snow", 
+"well below freezing", 
+"unseasonably warm",
+"freezing rain",
+"cold and clear",
+"blizzard conditions",
+"snow flurries",
+"blowing wind and snow",
+"sunny but cold",
+"snow squalls",
+"hail",
+"the first snow",
+"ice storm",
+"a mild winter day",
+"white out conditions",
+"cold, but not too cold",
+"cloudy and chilly",
+"clear skies",
+"far below freezing",
+"comfortably cold",
+"bizarrely warm for winter",
+"foggy and chilly"]
 
 /*const locationChoices = {
     "field":[{"winter":
@@ -69,10 +93,19 @@ const timeOfDay = [
                         "bubbles rising up from the lake",
                         "prey being chased by a predator",
                         "another horse approaching you",
-                        ""]
+                        "a grown horse playing in the snow",
+                        "it is eerily empty and quiet"]
     }]
     "spring":[{
-         "weather":
+         "weather": [
+             "cool and breezy",
+             "unseasonably warm",
+             "comfortably temperate"
+             "a spring rain shower"
+             "downpouring rain"
+             "it feels almost like early summer"
+             ""
+         ]
         "see":
     }]
     "summer":[{
@@ -122,24 +155,19 @@ const moods = ["angry",
     var time = timeofDay[Math.floor(Math.random() * timeOfDay.length)];
 
 }
-
-
+*/
 function randomMood(){
-    var mood = moods[Math.floor(Math.random() * moods.length)];
-    return mood
-}
+    var setMood = moods[Math.floor(Math.random()*moods.length)];
+    document.getElementById("moodDisplay").innerHTML= setMood;
+    }
 
-const decidedMood = randomMood(moods)
-
-
-//var randomMood = moods[Math.floor(Math.random()*moods.length)]; */
-
-function randomMood(){
-    var random = moods[Math.floor(Math.random()*moods.length)];
-    document.getElementById("moodDisplay").innerHTML=random;
+function randomWeather(){
+    var setWeather = tempWeather[Math.floor(Math.random()*tempWeather.length)];
+    document.getElementById("weather").innerHTML = setWeather;
 }
 
 function randomTime(){
     var dayTime = timeOfDay[Math.floor(Math.random()*timeOfDay.length)];
-    document.getElementById("generatedContent").innerHTML=dayTime;
+    document.getElementById("timeofday").innerHTML=dayTime;
 }
+
