@@ -45,12 +45,12 @@ button{
 }
 
 #generatedContent{
-    width: 400px;
+    width: 600px;
     height: 100px;
     font-family: 'Mate SC', serif;
     font-size: 20px;
     margin: auto;
-    padding-top: 15px;
+    line-height: 10px;
 }
 
 #footer{
