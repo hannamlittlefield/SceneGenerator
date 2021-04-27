@@ -50,18 +50,18 @@
                             <option value="fall">Fall</option>    
                         </select>
                     <br/>
-                <button onclick="generateScene()">Generate Scene</button>
+                <button onclick="randomTime();return false">Generate Scene</button>
                     </form>
-                <div id="generatedContent">Scene descriptors will update here</div>
+                <div id="generatedContent"></div>
                 </div>
-        <div id="moodDisplay"></div>
-        <button onClick="randomMood()">Generate Mood</button>
+        <button onclick="randomMood()">Generate Mood</button>
+        <p id="moodDisplay"></p>
         </div>
-        <script src="app.js"></script>
-        <script src="" async defer></script>
-        <footer>
-            <p id="footer">
-            Made with &#10084; by hanna</p>
-        </footer>
+        <script src="app.js" async></script>
+    <footer>
+        <p id="footer">
+        Made with &#10084; by hanna
+        </p>
+    </footer>
     </body>
 </html>
