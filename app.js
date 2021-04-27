@@ -51,6 +51,25 @@ const tempWeather = ["snowstorm",
 "bizarrely warm for winter",
 "foggy and chilly"]
 
+const tempVisual = ["no one else but yourself",
+"a group of foxes playing together",
+"a flock of birds taking flight",
+"one other lone horse",
+"a multi-headed lakefish jumping nearby",
+"fireflies a few yards away from you",
+"a leopard bounding through the snow",
+"another horse slipping on nearby ice",
+"a clump of snow moving weirdly",
+"snow collapsing a few tree branches",
+"footprints (of any kind) in the snow",
+"a waterfall",
+"bubbles rising up from the lake",
+"prey being chased by a predator",
+"another horse approaching you",
+"a grown horse playing in the snow",
+"it is eerily empty and quiet"
+]
+
 /*const locationChoices = {
     "field":[{"winter":
                 [{
@@ -156,6 +175,12 @@ const moods = ["angry",
 
 }
 */
+
+function randomSight(){
+    var setSight = tempVisual[Math.floor(Math.random()*tempVisual.length)];
+    document.getElementById("visuals").innerHTML = setSight;
+}
+
 function randomMood(){
     var setMood = moods[Math.floor(Math.random()*moods.length)];
     document.getElementById("moodDisplay").innerHTML= setMood;
