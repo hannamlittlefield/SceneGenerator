@@ -27,7 +27,7 @@ const timeOfDay = [
     "Sometime right before moonrise"
 ]
 
-const locationChoices = {
+/*const locationChoices = {
     "field":[{"winter":
                 [{
                     "weather":["snowstorm", 
@@ -38,7 +38,7 @@ const locationChoices = {
                         "cold and clear",
                         "blizzard conditions",
                         "snow flurries",
-                        "blowing wind and snow".
+                        "blowing wind and snow",
                         "sunny but cold",
                         "snow squalls",
                         "hail",
@@ -53,7 +53,7 @@ const locationChoices = {
                         "comfortably cold",
                         "bizarrely warm for winter",
                         "foggy and chilly"],
-                        
+
                     "see": ["no one else but yourself",
                         "a group of foxes playing together",
                         "a flock of birds taking flight",
@@ -86,8 +86,8 @@ const locationChoices = {
 
     }
 
-]*/
-
+]}
+*/
 const moods = ["angry", 
 "anticipating", 
 "anxious", 
@@ -116,10 +116,11 @@ const moods = ["angry",
 "romantic", 
 "cheerful", "cranky", "crazy", "mysterious", "dreamy", "content", "mellow", "silly", "energetic", "irritated", "weird", "startled", "alienated", "insignificant", "astonished", "eager", "amused", "inquisitive", "optimistic", "negative", "hesitant", "playful", "awed", "empathetic", "enthralled", "grateful", "happy", "impressed", "joyful", "light-hearted", "nostalgic", "passionate", "pleased", "powerful", "refreshed", "relaxed", "satisfied", "sentimental", "thoughtful", "trustful", "alienated", "annoyed", "brooding", "cold", "cranky", "critical", "drained", "embarrassed", "empty", "envious", "futile", "gloomy", "heartbroken", "humiliated", "lethargic", "painful", "serious", "skeptical", "uncomfortable", "tense", "vulnerable", "worried", "impartial", "understanding", "friendly", "scholarly", "bemused", "euphoric", "elated", "sly", "stern", "frantic", "foreboding", "disrespectful", "blunt", "bossy", "admiring", "affectionate", "appreciative", "hopeful", "hostile", "chipper", "energetic"];
 
-function generateScene(){
+/*function generateScene(){
     var e = document.getElementById("location")
     var chosenLocation = e.options[e.selectedIndex].value;
     var time = timeofDay[Math.floor(Math.random() * timeOfDay.length)];
+
 }
 
 
@@ -130,5 +131,15 @@ function randomMood(){
 
 const decidedMood = randomMood(moods)
 
-//var randomMood = moods[Math.floor(Math.random()*moods.length)];
-document.getElementById("moodDisplay").innerHTML = decidedMood;
+
+//var randomMood = moods[Math.floor(Math.random()*moods.length)]; */
+
+function randomMood(){
+    var random = moods[Math.floor(Math.random()*moods.length)];
+    document.getElementById("moodDisplay").innerHTML=random;
+}
+
+function randomTime(){
+    var dayTime = timeOfDay[Math.floor(Math.random()*timeOfDay.length)];
+    document.getElementById("generatedContent").innerHTML=dayTime;
+}
