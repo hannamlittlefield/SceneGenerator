@@ -50,9 +50,13 @@
                             <option value="fall">Fall</option>    
                         </select>
                     <br/>
-                <button onclick="randomTime();return false">Generate Scene</button>
+                <button onclick="randomTime(); randomWeather(); return false">Generate Scene</button>
                     </form>
-                <div id="generatedContent"></div>
+                <div id="generatedContent">
+                    <p id="timeofday"></p>
+                    <p id="weather"></p>
+                    <p id="visuals"></p>
+                </div>
                 </div>
         <button onclick="randomMood()">Generate Mood</button>
         <p id="moodDisplay"></p>
