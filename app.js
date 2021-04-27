@@ -27,29 +27,56 @@ const timeOfDay = [
     "Sometime right before moonrise"
 ]
 
-const tempWeather = ["snowstorm", 
-"dusting of snow", 
-"well below freezing", 
-"unseasonably warm",
-"freezing rain",
-"cold and clear",
-"blizzard conditions",
-"snow flurries",
-"blowing wind and snow",
-"sunny but cold",
-"snow squalls",
-"hail",
-"the first snow",
-"ice storm",
-"a mild winter day",
-"white out conditions",
-"cold, but not too cold",
-"cloudy and chilly",
-"clear skies",
-"far below freezing",
-"comfortably cold",
-"bizarrely warm for winter",
-"foggy and chilly"]
+const tempWeather = {
+    winter:
+        ["snowstorm", 
+        "dusting of snow", 
+        "well below freezing", 
+        "unseasonably warm",
+        "freezing rain",
+        "cold and clear",
+        "blizzard conditions",
+        "snow flurries",
+        "blowing wind and snow",
+        "sunny but cold",
+        "snow squalls",
+        "hail",
+        "the first snow",
+        "ice storm",
+        "a mild winter day",
+        "white out conditions",
+        "cold, but not too cold",
+        "cloudy and chilly",
+        "clear skies",
+        "far below freezing",
+        "comfortably cold",
+        "bizarrely warm for winter",
+        "foggy and chilly"],
+    spring:  [
+        "cool and breezy",
+        "unseasonably warm",
+        "comfortably temperate",
+        "a spring rain shower",
+        "downpouring rain",
+        "it feels almost like early summer",
+        "cloudy but warmer spring weather",
+        "looks like a spring rain is coming",
+    ],
+    summer: [
+        "atrociously hot",
+        "the perfect summer day",
+        "a summer thunderstorm",
+        "weirdly cold for summer",
+        "clear and hot"
+    ],
+    fall:[
+        "a warm fall day",
+        "it smells like snow",
+        "drizzly and gray",
+        "crisp and cool",
+        "fall rainstorm"
+    ]
+}
 
 const tempVisual = ["no one else but yourself",
 "a group of foxes playing together",
@@ -187,8 +214,12 @@ function randomMood(){
     }
 
 function randomWeather(){
-    var setWeather = tempWeather[Math.floor(Math.random()*tempWeather.length)];
-    document.getElementById("weather").innerHTML = setWeather;
+    var e = document.getElementById('season');
+    var selectedSeason = e.options[e.selectedIndex].value;
+        if (selectedSeason === 'winter'){
+            var setWeather = tempWeather.winter[Math.floor(Math.random()*tempWeather.winter.length)];
+            document.getElementById("weather").innerHTML = setWeather;
+        }
 }
 
 function randomTime(){
