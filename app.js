@@ -220,6 +220,18 @@ function randomWeather(){
             var setWeather = tempWeather.winter[Math.floor(Math.random()*tempWeather.winter.length)];
             document.getElementById("weather").innerHTML = setWeather;
         }
+        if (selectedSeason === 'spring'){
+            var setWeather = tempWeather.spring[Math.floor(Math.random()*tempWeather.spring.length)];
+            document.getElementById("weather").innerHTML = setWeather;
+        }
+        if (selectedSeason === 'summer'){
+            var setWeather = tempWeather.summer[Math.floor(Math.random()*tempWeather.summer.length)];
+            document.getElementById("weather").innerHTML = setWeather;
+        }
+        if (selectedSeason === 'fall'){
+            var setWeather = tempWeather.fall[Math.floor(Math.random()*tempWeather.fall.length)];
+            document.getElementById("weather").innerHTML = setWeather;
+        }
 }
 
 function randomTime(){
